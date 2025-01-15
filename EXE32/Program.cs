@@ -18,7 +18,7 @@ internal class Program
         }
 
         Console.WriteLine("The sequence of moves involved in the Tower of Hanoi are:");
-        TowerOfHanoi(n, 'A', 'C', 'B');
+        TowerOfHanoi(n, 'A', 'B', 'C');
     }
 
     private static void TowerOfHanoi(int n, char source, char target, char auxiliary)

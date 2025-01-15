@@ -19,6 +19,7 @@ internal class Program
         }
 
         Console.WriteLine($"GCD of {a} and {b} is: {GCD(a, b)}");
+        Console.ReadKey();
     }
 
     static int GCD(int a, int b)

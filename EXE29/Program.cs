@@ -5,20 +5,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("Enter the CSV file path: ");
-        string? filePath = Console.ReadLine()?.Trim();
-
-        if (string.IsNullOrWhiteSpace(filePath))
-        {
-            Console.WriteLine("Invalid file path. Please enter a non-empty path.");
-            return;
-        }
-
-        if (!File.Exists(filePath))
-        {
-            Console.WriteLine("File not found.");
-            return;
-        }
+        string? filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "products.csv");
 
         double totalValue = 0;
         Console.WriteLine($"Products priced above a certain amount:");

@@ -1,3 +1,4 @@
+1.	Write a program to print all numbers from n to m, where n and m are user inputs. (1 point) check
 2.	Write a program to print all odd numbers between n and m. (1 point)
 3.	Write a program to print all even numbers in reverse order from m to n. (1 point)
 4.	Write a program to calculate the sum of all numbers from n to m. (1 point)
@@ -24,10 +25,15 @@
 25.	Write a program to simulate a bank account system with options to deposit, withdraw, and check the balance. (3 points)
 26.	Write a program to create a guessing game. Generate a random number between n and m, and give the user higher/lower hints. (3 points)
 27.	Write a program to read a text file, count the number of lines, words, and characters, and find the longest word in the file. (3 points)
+Done
 28.	Write a program to store student names and grades in a dictionary. Print all students who scored above t, and find the student with the highest grade. (3 points)
+Done
 29.	Write a program to read a CSV file containing product details (name, price, quantity). Print products priced above p and calculate total inventory value. (3 points)
+Done
 30.	Write a program to find the nth Fibonacci number using recursion. (2 points)
+Done
 31.	Write a recursive program to calculate the greatest common divisor (GCD) of two numbers. (2 points)
+Done
 32.	Write a program to solve the Tower of Hanoi problem for n disks. (3 points)
 
 

@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\PRN212\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E7D9A19F-A6D8-45FE-B5A4-6F8393DF7E7E}|EXE29\\EXE29.csproj|d:\\prn212\\exe29\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7D9A19F-A6D8-45FE-B5A4-6F8393DF7E7E}|EXE29\\EXE29.csproj|solutionrelative:exe29\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7237417-430F-4B21-B5AB-C224F45CC482}|EXE30\\EXE30.csproj|d:\\prn212\\exe30\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7237417-430F-4B21-B5AB-C224F45CC482}|EXE30\\EXE30.csproj|solutionrelative:exe30\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A52ED3F8-5CC9-40FB-A726-2BF17F43936E}|EXE31\\EXE31.csproj|d:\\prn212\\exe31\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A52ED3F8-5CC9-40FB-A726-2BF17F43936E}|EXE31\\EXE31.csproj|solutionrelative:exe31\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80A084DF-EBF4-4538-939D-10B0BC7E807D}|EXE32\\EXE32.csproj|d:\\prn212\\exe32\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A084DF-EBF4-4538-939D-10B0BC7E807D}|EXE32\\EXE32.csproj|solutionrelative:exe32\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{84A29532-6303-4D42-9F3B-2733BE202462}|EXE17\\EXE17.csproj|d:\\prn212\\exe17\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84A29532-6303-4D42-9F3B-2733BE202462}|EXE17\\EXE17.csproj|solutionrelative:exe17\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3FD3CC23-751E-4902-8927-A5567F665C5C}|EXE01\\EXE01.csproj|d:\\prn212\\exe01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FD3CC23-751E-4902-8927-A5567F665C5C}|EXE01\\EXE01.csproj|solutionrelative:exe01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80A084DF-EBF4-4538-939D-10B0BC7E807D}|EXE32\\EXE32.csproj|d:\\prn212\\exe32\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80A084DF-EBF4-4538-939D-10B0BC7E807D}|EXE32\\EXE32.csproj|solutionrelative:exe32\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE1C18CF-0444-4AD1-B01A-4FF18BB185E7}|EXE09\\EXE09.csproj|d:\\prn212\\exe09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,11 +60,50 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PRN212\\EXE29\\Program.cs",
+              "RelativeDocumentMoniker": "EXE29\\Program.cs",
+              "ToolTip": "D:\\PRN212\\EXE29\\Program.cs",
+              "RelativeToolTip": "EXE29\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:18:05.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PRN212\\EXE30\\Program.cs",
+              "RelativeDocumentMoniker": "EXE30\\Program.cs",
+              "ToolTip": "D:\\PRN212\\EXE30\\Program.cs",
+              "RelativeToolTip": "EXE30\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T13:13:28.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PRN212\\EXE31\\Program.cs",
+              "RelativeDocumentMoniker": "EXE31\\Program.cs",
+              "ToolTip": "D:\\PRN212\\EXE31\\Program.cs",
+              "RelativeToolTip": "EXE31\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T12:56:48.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE17\\Program.cs",
               "RelativeDocumentMoniker": "EXE17\\Program.cs",
               "ToolTip": "D:\\PRN212\\EXE17\\Program.cs",
               "RelativeToolTip": "EXE17\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T12:25:38.164Z",
               "EditorCaption": ""
@@ -65,14 +116,14 @@
               "RelativeDocumentMoniker": "EXE32\\Program.cs",
               "ToolTip": "D:\\PRN212\\EXE32\\Program.cs",
               "RelativeToolTip": "EXE32\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T11:40:50.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE09\\Program.cs",
               "RelativeDocumentMoniker": "EXE09\\Program.cs",
@@ -85,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE08\\Program.cs",
               "RelativeDocumentMoniker": "EXE08\\Program.cs",
@@ -98,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE04\\Program.cs",
               "RelativeDocumentMoniker": "EXE04\\Program.cs",
@@ -111,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE03\\Program.cs",
               "RelativeDocumentMoniker": "EXE03\\Program.cs",
@@ -124,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE02\\Program.cs",
               "RelativeDocumentMoniker": "EXE02\\Program.cs",
@@ -137,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE01\\Program.cs",
               "RelativeDocumentMoniker": "EXE01\\Program.cs",
