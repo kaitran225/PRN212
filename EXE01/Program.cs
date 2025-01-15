@@ -33,23 +33,3 @@ internal class EXE01
         }
     }
 }
-
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.Write("Enter n: ");
-        int n = int.Parse(Console.ReadLine());
-        
-        Console.Write("Enter m: ");
-        int m = int.Parse(Console.ReadLine());
-
-        Console.WriteLine($"\nNumbers from {n} to {m}:");
-        for (int i = n; i <= m; i++)
-        {
-            Console.Write($"{i} ");
-        }
-        Console.WriteLine();
-    }
-}

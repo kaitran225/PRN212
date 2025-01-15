@@ -2,7 +2,7 @@
 
 internal class Program
 {
-    static void Main(string[] args)
+    private static void Main()
     {
         Console.Write("Enter the number of disks: ");
         int n = int.Parse(Console.ReadLine().Trim());
@@ -11,7 +11,7 @@ internal class Program
         TowerOfHanoi(n, 'A', 'C', 'B');
     }
 
-    static void TowerOfHanoi(int n, char source, char target, char auxiliary)
+    private static void TowerOfHanoi(int n, char source, char target, char auxiliary)
     {
         if (n == 1)
         {
