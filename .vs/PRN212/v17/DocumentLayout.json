@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\PRN212\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{84A29532-6303-4D42-9F3B-2733BE202462}|EXE17\\EXE17.csproj|d:\\prn212\\exe17\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84A29532-6303-4D42-9F3B-2733BE202462}|EXE17\\EXE17.csproj|solutionrelative:exe17\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57B808F-744A-4474-9F2A-4DA4D45FBAC2}|EXE02\\EXE02.csproj|d:\\prn212\\exe02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57B808F-744A-4474-9F2A-4DA4D45FBAC2}|EXE02\\EXE02.csproj|solutionrelative:exe02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3FD3CC23-751E-4902-8927-A5567F665C5C}|EXE01\\EXE01.csproj|d:\\prn212\\exe01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FD3CC23-751E-4902-8927-A5567F665C5C}|EXE01\\EXE01.csproj|solutionrelative:exe01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3CDEB854-0F27-45DF-8BDF-DD0C4D23D4F8}|EXE03\\EXE03.csproj|d:\\prn212\\exe03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CDEB854-0F27-45DF-8BDF-DD0C4D23D4F8}|EXE03\\EXE03.csproj|solutionrelative:exe03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E57B808F-744A-4474-9F2A-4DA4D45FBAC2}|EXE02\\EXE02.csproj|d:\\prn212\\exe02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E57B808F-744A-4474-9F2A-4DA4D45FBAC2}|EXE02\\EXE02.csproj|solutionrelative:exe02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,24 +42,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PRN212\\EXE17\\Program.cs",
+              "RelativeDocumentMoniker": "EXE17\\Program.cs",
+              "ToolTip": "D:\\PRN212\\EXE17\\Program.cs",
+              "RelativeToolTip": "EXE17\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T12:25:38.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE32\\Program.cs",
               "RelativeDocumentMoniker": "EXE32\\Program.cs",
               "ToolTip": "D:\\PRN212\\EXE32\\Program.cs",
               "RelativeToolTip": "EXE32\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T11:40:50.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE09\\Program.cs",
               "RelativeDocumentMoniker": "EXE09\\Program.cs",
@@ -68,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE08\\Program.cs",
               "RelativeDocumentMoniker": "EXE08\\Program.cs",
@@ -81,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE04\\Program.cs",
               "RelativeDocumentMoniker": "EXE04\\Program.cs",
@@ -94,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE03\\Program.cs",
               "RelativeDocumentMoniker": "EXE03\\Program.cs",
@@ -107,26 +124,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE02\\Program.cs",
               "RelativeDocumentMoniker": "EXE02\\Program.cs",
               "ToolTip": "D:\\PRN212\\EXE02\\Program.cs",
               "RelativeToolTip": "EXE02\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T11:39:56.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN212\\EXE01\\Program.cs",
               "RelativeDocumentMoniker": "EXE01\\Program.cs",
               "ToolTip": "D:\\PRN212\\EXE01\\Program.cs",
               "RelativeToolTip": "EXE01\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAlwBcAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T11:33:01.043Z",
               "EditorCaption": ""
