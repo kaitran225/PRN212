@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PRN212\\ConsoleApp1\\EXE17.csproj": {}
+    "D:\\PRN212\\EXE17\\EXE17.csproj": {}
   },
   "projects": {
-    "D:\\PRN212\\ConsoleApp1\\EXE17.csproj": {
+    "D:\\PRN212\\EXE17\\EXE17.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN212\\ConsoleApp1\\EXE17.csproj",
+        "projectUniqueName": "D:\\PRN212\\EXE17\\EXE17.csproj",
         "projectName": "EXE17",
-        "projectPath": "D:\\PRN212\\ConsoleApp1\\EXE17.csproj",
+        "projectPath": "D:\\PRN212\\EXE17\\EXE17.csproj",
         "packagesPath": "C:\\Users\\Cybria\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN212\\ConsoleApp1\\obj\\",
+        "outputPath": "D:\\PRN212\\EXE17\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

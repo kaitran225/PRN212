@@ -6,7 +6,13 @@ internal class Program
     static void Main(string[] args)
     {
         Console.Write("Enter the file path: ");
-        string filePath = Console.ReadLine().Trim();
+        string? filePath = Console.ReadLine()?.Trim();
+
+        if (string.IsNullOrWhiteSpace(filePath))
+        {
+            Console.WriteLine("Invalid file path. Please enter a non-empty path.");
+            return;
+        }
 
         if (!File.Exists(filePath))
         {

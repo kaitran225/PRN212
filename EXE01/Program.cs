@@ -4,12 +4,22 @@ internal class EXE01
     private static bool PrintRangedNums()
     {
         Console.Write("Enter lower bound: ");
-        int? n = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int n))
+        {
+            Console.WriteLine("Invalid input for lower bound. Please enter an integer.");
+            return false;
+        }
+
         Console.Write("Enter upper bound: ");
-        int? m = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int m))
+        {
+            Console.WriteLine("Invalid input for upper bound. Please enter an integer.");
+            return false;
+        }
+
         if (n < m)
         {
-            for (int i = (int)n; i <= m; i++)
+            for (int i = n; i <= m; i++)
             {
                 Console.WriteLine(i);
             }
@@ -17,19 +27,21 @@ internal class EXE01
         }
         else
         {
-            Console.WriteLine(" Lower bound should not be either equal nor larger than upper bound");
+            Console.WriteLine("Lower bound should not be either equal to or larger than upper bound.");
             return false;
         }
     }
+
     private static void Main(string[] args)
     {
-
         while (true)
         {
-            if (PrintRangedNums()) {
+            if (PrintRangedNums())
+            {
                 Console.WriteLine("Press any key to exit...");
                 Console.ReadLine();
-                break; }
+                break;
+            }
         }
     }
 }

@@ -11,7 +11,12 @@ internal class Program
 
         while (true)
         {
-            double num = double.Parse(Console.ReadLine().Trim());
+            if (!double.TryParse(Console.ReadLine()?.Trim(), out double num))
+            {
+                Console.WriteLine("Invalid input. Please enter a valid number.");
+                continue;
+            }
+
             if (num == -1) break;
 
             sum += num;

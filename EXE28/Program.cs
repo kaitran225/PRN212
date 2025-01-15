@@ -6,11 +6,9 @@ internal class Program
     static void Main(string[] args)
     {
         Console.Write("Enter number of students (k): ");
-        int k = int.Parse(Console.ReadLine().Trim());
-
-        if (k <= 0)
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int k) || k <= 0)
         {
-            Console.WriteLine("Error: Number of students must be positive");
+            Console.WriteLine("Invalid input. Please enter a positive integer.");
             return;
         }
 
@@ -19,15 +17,32 @@ internal class Program
         for (int i = 0; i < k; i++)
         {
             Console.Write($"Enter name for student {i + 1}: ");
-            string name = Console.ReadLine().Trim();
+            string? name = Console.ReadLine()?.Trim();
             
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                Console.WriteLine("Invalid input. Please enter a non-empty name.");
+                i--;
+                continue;
+            }
+
             Console.Write($"Enter score for {name}: ");
-            double score = double.Parse(Console.ReadLine().Trim());
+            if (!double.TryParse(Console.ReadLine()?.Trim(), out double score))
+            {
+                Console.WriteLine("Invalid input. Please enter a valid number.");
+                i--;
+                continue;
+            }
+
             studentGrades[name] = score;
         }
 
         Console.Write("Enter threshold score (t): ");
-        double threshold = double.Parse(Console.ReadLine().Trim());
+        if (!double.TryParse(Console.ReadLine()?.Trim(), out double threshold))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number.");
+            return;
+        }
 
         Console.WriteLine("\nStudents who scored above threshold:");
         foreach (var student in studentGrades)
@@ -38,7 +53,14 @@ internal class Program
             }
         }
 
-        var topStudent = studentGrades.OrderByDescending(s => s.Value).First();
-        Console.WriteLine($"\nTop student: {topStudent.Key} with score: {topStudent.Value}");
+        if (studentGrades.Count > 0)
+        {
+            var topStudent = studentGrades.OrderByDescending(s => s.Value).First();
+            Console.WriteLine($"\nTop student: {topStudent.Key} with score: {topStudent.Value}");
+        }
+        else
+        {
+            Console.WriteLine("No students were entered.");
+        }
     }
 }

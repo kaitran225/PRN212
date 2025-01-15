@@ -4,20 +4,30 @@ internal class Program
     static void Main(string[] args)
     {
         Console.Write("Enter n: ");
-        int n = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int n))
+        {
+            Console.WriteLine("Invalid input for n. Please enter an integer.");
+            return;
+        }
         
         Console.Write("Enter m: ");
-        int m = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int m))
+        {
+            Console.WriteLine("Invalid input for m. Please enter an integer.");
+            return;
+        }
         
         Console.Write("Enter x: ");
-        int x = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int x) || x == 0)
+        {
+            Console.WriteLine("Invalid input for x. Please enter a non-zero integer.");
+            return;
+        }
         
         Console.Write("Enter y: ");
-        int y = int.Parse(Console.ReadLine().Trim());
-
-        if (x == 0 || y == 0)
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int y) || y == 0)
         {
-            Console.WriteLine("Error: x and y cannot be zero");
+            Console.WriteLine("Invalid input for y. Please enter a non-zero integer.");
             return;
         }
 

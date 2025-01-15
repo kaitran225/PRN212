@@ -4,7 +4,13 @@ internal class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Enter a sentence:");
-        string sentence = Console.ReadLine();
+        string? sentence = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(sentence))
+        {
+            Console.WriteLine("Invalid input. Please enter a non-empty sentence.");
+            return;
+        }
 
         int vowelCount = 0;
         int spaceCount = 0;

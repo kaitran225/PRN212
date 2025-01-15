@@ -4,16 +4,18 @@ internal class Program
     static void Main(string[] args)
     {
         Console.Write("Enter number of students (k): ");
-        int k = int.Parse(Console.ReadLine().Trim());
-
-        if (k <= 0)
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int k) || k <= 0)
         {
-            Console.WriteLine("Error: Number of students must be positive");
+            Console.WriteLine("Invalid input for k. Please enter a positive integer.");
             return;
         }
 
         Console.Write("Enter passing score (p): ");
-        double passingScore = double.Parse(Console.ReadLine().Trim());
+        if (!double.TryParse(Console.ReadLine()?.Trim(), out double passingScore))
+        {
+            Console.WriteLine("Invalid input for passing score. Please enter a valid number.");
+            return;
+        }
 
         string[] names = new string[k];
         double[] scores = new double[k];
@@ -22,10 +24,14 @@ internal class Program
         for (int i = 0; i < k; i++)
         {
             Console.Write($"\nEnter name for student {i + 1}: ");
-            names[i] = Console.ReadLine().Trim();
+            names[i] = Console.ReadLine()?.Trim() ?? string.Empty;
             
             Console.Write($"Enter score for {names[i]}: ");
-            scores[i] = double.Parse(Console.ReadLine().Trim());
+            if (!double.TryParse(Console.ReadLine()?.Trim(), out scores[i]))
+            {
+                Console.WriteLine($"Invalid input for score. Please enter a valid number.");
+                return;
+            }
             sum += scores[i];
         }
 

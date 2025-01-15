@@ -6,7 +6,13 @@ internal class Program
     static void Main(string[] args)
     {
         Console.Write("Enter the CSV file path: ");
-        string filePath = Console.ReadLine().Trim();
+        string? filePath = Console.ReadLine()?.Trim();
+
+        if (string.IsNullOrWhiteSpace(filePath))
+        {
+            Console.WriteLine("Invalid file path. Please enter a non-empty path.");
+            return;
+        }
 
         if (!File.Exists(filePath))
         {
@@ -18,7 +24,11 @@ internal class Program
         Console.WriteLine($"Products priced above a certain amount:");
 
         Console.Write("Enter price threshold (p): ");
-        double priceThreshold = double.Parse(Console.ReadLine().Trim());
+        if (!double.TryParse(Console.ReadLine()?.Trim(), out double priceThreshold))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number.");
+            return;
+        }
 
         string[] lines = File.ReadAllLines(filePath);
         foreach (string line in lines)
@@ -27,8 +37,16 @@ internal class Program
             if (parts.Length >= 3)
             {
                 string productName = parts[0].Trim();
-                double price = double.Parse(parts[1].Trim());
-                int quantity = int.Parse(parts[2].Trim());
+                if (!double.TryParse(parts[1].Trim(), out double price))
+                {
+                    Console.WriteLine($"Invalid price for product: {productName}. Skipping...");
+                    continue;
+                }
+                if (!int.TryParse(parts[2].Trim(), out int quantity))
+                {
+                    Console.WriteLine($"Invalid quantity for product: {productName}. Skipping...");
+                    continue;
+                }
 
                 if (price > priceThreshold)
                 {

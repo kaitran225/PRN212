@@ -5,7 +5,11 @@ internal class Program
     static void Main(string[] args)
     {
         Console.Write("Enter the position of Fibonacci number (n): ");
-        int n = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int n))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+            return;
+        }
 
         if (n < 0)
         {
@@ -18,6 +22,7 @@ internal class Program
 
     static long Fibonacci(int n)
     {
+        if (n < 0) throw new ArgumentException("n must be non-negative.");
         if (n <= 1) return n;
         return Fibonacci(n - 1) + Fibonacci(n - 2);
     }

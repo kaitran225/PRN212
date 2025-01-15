@@ -6,10 +6,24 @@ internal class Program
     {
         Random random = new Random();
         Console.Write("Enter lower bound (n): ");
-        int n = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int n))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+            return;
+        }
         
         Console.Write("Enter upper bound (m): ");
-        int m = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int m))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+            return;
+        }
+
+        if (n >= m)
+        {
+            Console.WriteLine("Lower bound should be less than upper bound.");
+            return;
+        }
         
         int target = random.Next(n, m + 1);
         int guess = 0;
@@ -19,7 +33,11 @@ internal class Program
         while (guess != target)
         {
             Console.Write("Enter your guess: ");
-            guess = int.Parse(Console.ReadLine().Trim());
+            if (!int.TryParse(Console.ReadLine()?.Trim(), out guess))
+            {
+                Console.WriteLine("Invalid input. Please enter a valid integer.");
+                continue;
+            }
 
             if (guess < target)
             {

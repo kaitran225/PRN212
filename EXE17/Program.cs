@@ -1,19 +1,29 @@
 ﻿using System;
-internal class Program
+
+class Program
 {
     static void Main(string[] args)
     {
         Console.Write("Enter a number: ");
-        int number = int.Parse(Console.ReadLine().Trim());
-        int reversed = 0;
-
-        while (number != 0)
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int number))
         {
-            int digit = number % 10;
-            reversed = reversed * 10 + digit;
-            number /= 10;
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+            return;
         }
 
-        Console.WriteLine($"Reversed number: {reversed}");
+        int reversedNumber = ReverseDigits(number);
+        Console.WriteLine($"Reversed number: {reversedNumber}");
+    }
+
+    static int ReverseDigits(int num)
+    {
+        int reversed = 0;
+        while (num > 0)
+        {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+        return reversed;
     }
 }

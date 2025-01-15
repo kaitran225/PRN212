@@ -4,11 +4,9 @@ internal class Program
     static void Main(string[] args)
     {
         Console.Write("Enter the number of values (k): ");
-        int k = int.Parse(Console.ReadLine().Trim());
-
-        if (k <= 0)
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int k) || k <= 0)
         {
-            Console.WriteLine("Error: k must be positive");
+            Console.WriteLine("Invalid input for k. Please enter a positive integer.");
             return;
         }
 
@@ -16,7 +14,11 @@ internal class Program
         for (int i = 1; i <= k; i++)
         {
             Console.Write($"Enter number {i}: ");
-            double num = double.Parse(Console.ReadLine().Trim());
+            if (!double.TryParse(Console.ReadLine()?.Trim(), out double num))
+            {
+                Console.WriteLine($"Invalid input for number {i}. Please enter a valid number.");
+                return;
+            }
             sum += num;
         }
 

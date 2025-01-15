@@ -4,10 +4,18 @@ internal class Program
     static void Main(string[] args)
     {
         Console.Write("Enter n: ");
-        int n = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int n))
+        {
+            Console.WriteLine("Invalid input for n. Please enter an integer.");
+            return;
+        }
         
         Console.Write("Enter m: ");
-        int m = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int m))
+        {
+            Console.WriteLine("Invalid input for m. Please enter an integer.");
+            return;
+        }
 
         if (n < m)
         {

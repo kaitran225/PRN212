@@ -4,10 +4,24 @@ internal class Program
     static void Main(string[] args)
     {
         Console.Write("Enter lower bound (n): ");
-        int n = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int n))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+            return;
+        }
         
         Console.Write("Enter upper bound (m): ");
-        int m = int.Parse(Console.ReadLine().Trim());
+        if (!int.TryParse(Console.ReadLine()?.Trim(), out int m))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+            return;
+        }
+
+        if (n > m)
+        {
+            Console.WriteLine("Lower bound should not be greater than upper bound.");
+            return;
+        }
 
         Console.WriteLine($"\nPrime numbers between {n} and {m}:");
         for (int i = n; i <= m; i++)
