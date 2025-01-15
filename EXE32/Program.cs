@@ -8,7 +8,7 @@ internal class Program
         int n = int.Parse(Console.ReadLine().Trim());
 
         Console.WriteLine("The sequence of moves involved in the Tower of Hanoi are:");
-        TowerOfHanoi(n, 'A', 'C', 'B'); // A, C, B are names of rods
+        TowerOfHanoi(n, 'A', 'C', 'B');
     }
 
     static void TowerOfHanoi(int n, char source, char target, char auxiliary)
