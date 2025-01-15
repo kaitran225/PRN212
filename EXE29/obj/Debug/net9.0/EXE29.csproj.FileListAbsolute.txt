@@ -1,0 +1,15 @@
+D:\PRN212\EXE29\bin\Debug\net9.0\EXE29.exe
+D:\PRN212\EXE29\bin\Debug\net9.0\EXE29.deps.json
+D:\PRN212\EXE29\bin\Debug\net9.0\EXE29.runtimeconfig.json
+D:\PRN212\EXE29\bin\Debug\net9.0\EXE29.dll
+D:\PRN212\EXE29\bin\Debug\net9.0\EXE29.pdb
+D:\PRN212\EXE29\obj\Debug\net9.0\EXE29.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN212\EXE29\obj\Debug\net9.0\EXE29.AssemblyInfoInputs.cache
+D:\PRN212\EXE29\obj\Debug\net9.0\EXE29.AssemblyInfo.cs
+D:\PRN212\EXE29\obj\Debug\net9.0\EXE29.csproj.CoreCompileInputs.cache
+D:\PRN212\EXE29\obj\Debug\net9.0\EXE29.sourcelink.json
+D:\PRN212\EXE29\obj\Debug\net9.0\EXE29.dll
+D:\PRN212\EXE29\obj\Debug\net9.0\refint\EXE29.dll
+D:\PRN212\EXE29\obj\Debug\net9.0\EXE29.pdb
+D:\PRN212\EXE29\obj\Debug\net9.0\EXE29.genruntimeconfig.cache
+D:\PRN212\EXE29\obj\Debug\net9.0\ref\EXE29.dll
