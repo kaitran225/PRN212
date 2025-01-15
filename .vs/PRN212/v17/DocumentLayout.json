@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nguye\\source\\repos\\PRN212\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD3CC23-751E-4902-8927-A5567F665C5C}|EXE01\\EXE01.csproj|c:\\users\\nguye\\source\\repos\\prn212\\exe01\\todo.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3FD3CC23-751E-4902-8927-A5567F665C5C}|EXE01\\EXE01.csproj|solutionrelative:exe01\\todo.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD3CC23-751E-4902-8927-A5567F665C5C}|EXE01\\EXE01.csproj|c:\\users\\nguye\\source\\repos\\prn212\\exe01\\exe01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FD3CC23-751E-4902-8927-A5567F665C5C}|EXE01\\EXE01.csproj|solutionrelative:exe01\\exe01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FD3CC23-751E-4902-8927-A5567F665C5C}|EXE01\\EXE01.csproj|c:\\users\\nguye\\source\\repos\\prn212\\exe01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FD3CC23-751E-4902-8927-A5567F665C5C}|EXE01\\EXE01.csproj|solutionrelative:exe01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CD5D4C0-99DC-40F2-B124-49E7EDCED2BC}|EXE06\\EXE06.csproj|c:\\users\\nguye\\source\\repos\\prn212\\exe06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CD5D4C0-99DC-40F2-B124-49E7EDCED2BC}|EXE06\\EXE06.csproj|solutionrelative:exe06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E31E450-51FC-4659-B7B8-EA05D209CACE}|EXE05\\EXE05.csproj|c:\\users\\nguye\\source\\repos\\prn212\\exe05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E31E450-51FC-4659-B7B8-EA05D209CACE}|EXE05\\EXE05.csproj|solutionrelative:exe05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CDEB854-0F27-45DF-8BDF-DD0C4D23D4F8}|EXE03\\EXE03.csproj|c:\\users\\nguye\\source\\repos\\prn212\\exe03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CDEB854-0F27-45DF-8BDF-DD0C4D23D4F8}|EXE03\\EXE03.csproj|solutionrelative:exe03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57B808F-744A-4474-9F2A-4DA4D45FBAC2}|EXE02\\EXE02.csproj|c:\\users\\nguye\\source\\repos\\prn212\\exe02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57B808F-744A-4474-9F2A-4DA4D45FBAC2}|EXE02\\EXE02.csproj|solutionrelative:exe02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{991B587E-BFC4-4D49-96C4-D149AD0E4234}|EXE04\\EXE04.csproj|c:\\users\\nguye\\source\\repos\\prn212\\exe04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991B587E-BFC4-4D49-96C4-D149AD0E4234}|EXE04\\EXE04.csproj|solutionrelative:exe04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "todo.txt",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE01\\todo.txt",
+              "RelativeDocumentMoniker": "EXE01\\todo.txt",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE01\\todo.txt",
+              "RelativeToolTip": "EXE01\\todo.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-01-14T10:00:28.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE01\\Program.cs",
+              "RelativeDocumentMoniker": "EXE01\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE01\\Program.cs",
+              "RelativeToolTip": "EXE01\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T09:51:35.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE06\\Program.cs",
+              "RelativeDocumentMoniker": "EXE06\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE06\\Program.cs",
+              "RelativeToolTip": "EXE06\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T09:52:15.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE05\\Program.cs",
+              "RelativeDocumentMoniker": "EXE05\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE05\\Program.cs",
+              "RelativeToolTip": "EXE05\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAywCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T09:19:48.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE04\\Program.cs",
+              "RelativeDocumentMoniker": "EXE04\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE04\\Program.cs",
+              "RelativeToolTip": "EXE04\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T08:34:45.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE03\\Program.cs",
+              "RelativeDocumentMoniker": "EXE03\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE03\\Program.cs",
+              "RelativeToolTip": "EXE03\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T08:34:14.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE02\\Program.cs",
+              "RelativeDocumentMoniker": "EXE02\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE02\\Program.cs",
+              "RelativeToolTip": "EXE02\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T08:23:08.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EXE01.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE01\\EXE01.cs",
+              "RelativeDocumentMoniker": "EXE01\\EXE01.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE01\\EXE01.cs",
+              "RelativeToolTip": "EXE01\\EXE01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T08:22:19.731Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

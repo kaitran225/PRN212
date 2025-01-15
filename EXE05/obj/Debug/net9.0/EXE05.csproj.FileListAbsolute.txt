@@ -1,0 +1,14 @@
+C:\Users\nguye\source\repos\PRN212\EXE05\bin\Debug\net9.0\EXE05.exe
+C:\Users\nguye\source\repos\PRN212\EXE05\bin\Debug\net9.0\EXE05.deps.json
+C:\Users\nguye\source\repos\PRN212\EXE05\bin\Debug\net9.0\EXE05.runtimeconfig.json
+C:\Users\nguye\source\repos\PRN212\EXE05\bin\Debug\net9.0\EXE05.dll
+C:\Users\nguye\source\repos\PRN212\EXE05\bin\Debug\net9.0\EXE05.pdb
+C:\Users\nguye\source\repos\PRN212\EXE05\obj\Debug\net9.0\EXE05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nguye\source\repos\PRN212\EXE05\obj\Debug\net9.0\EXE05.AssemblyInfoInputs.cache
+C:\Users\nguye\source\repos\PRN212\EXE05\obj\Debug\net9.0\EXE05.AssemblyInfo.cs
+C:\Users\nguye\source\repos\PRN212\EXE05\obj\Debug\net9.0\EXE05.csproj.CoreCompileInputs.cache
+C:\Users\nguye\source\repos\PRN212\EXE05\obj\Debug\net9.0\EXE05.dll
+C:\Users\nguye\source\repos\PRN212\EXE05\obj\Debug\net9.0\refint\EXE05.dll
+C:\Users\nguye\source\repos\PRN212\EXE05\obj\Debug\net9.0\EXE05.pdb
+C:\Users\nguye\source\repos\PRN212\EXE05\obj\Debug\net9.0\EXE05.genruntimeconfig.cache
+C:\Users\nguye\source\repos\PRN212\EXE05\obj\Debug\net9.0\ref\EXE05.dll
