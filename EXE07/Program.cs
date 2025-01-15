@@ -1,36 +1,26 @@
-﻿internal class EXE01
+﻿using System;
+internal class Program
 {
-    private static bool PrintRangedNums()
+    static void Main(string[] args)
     {
-        Console.Write("Enter lower bound: ");
-        int? n = int.Parse(Console.ReadLine().Trim());
-        Console.Write("Enter upper bound: ");
-        int? m = int.Parse(Console.ReadLine().Trim());
-        if (n < m)
-        {
-            for (int i = (int)n; i <= m; i++)
-            {
-                Console.WriteLine(i);
-            }
-            return true;
-        }
-        else
-        {
-            Console.WriteLine(" Lower bound should not be either equal nor larger than upper bound");
-            return false;
-        }
-    }
-    private static void Main(string[] args)
-    {
+        Console.Write("Enter the number of values (k): ");
+        int k = int.Parse(Console.ReadLine().Trim());
 
-        while (true)
+        if (k <= 0)
         {
-            if (PrintRangedNums())
-            {
-                Console.WriteLine("Press any key to exit...");
-                Console.ReadLine();
-                break;
-            }
+            Console.WriteLine("Error: k must be positive");
+            return;
         }
+
+        double sum = 0;
+        for (int i = 1; i <= k; i++)
+        {
+            Console.Write($"Enter number {i}: ");
+            double num = double.Parse(Console.ReadLine().Trim());
+            sum += num;
+        }
+
+        double average = sum / k;
+        Console.WriteLine($"\nAverage: {average:F2}");
     }
 }

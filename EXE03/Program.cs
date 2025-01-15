@@ -1,42 +1,29 @@
 ﻿using System;
-internal class EXE01
+internal class Program
 {
-    private static bool PrintDivisibleByK()
+    static void Main(string[] args)
     {
-        Console.Write("Enter lower bound: ");
-        int? n = int.Parse(Console.ReadLine().Trim());
-        Console.Write("Enter upper bound: ");
-        int? m = int.Parse(Console.ReadLine().Trim());
-        Console.Write("Enter divider k: ");
-        int? k = int.Parse(Console.ReadLine().Trim());
+        Console.Write("Enter n: ");
+        int n = int.Parse(Console.ReadLine().Trim());
+        
+        Console.Write("Enter m: ");
+        int m = int.Parse(Console.ReadLine().Trim());
 
-        if (n < m || (k != 0))
+        if (n < m)
         {
-            for (int i = (int)n; i <= m; i++)
+            Console.WriteLine($"\nEven numbers from {m} to {n} in reverse order:");
+            for (int i = m; i >= n; i--)
             {
-                if (i % k == 0)
+                if (i % 2 == 0)
                 {
-                    Console.WriteLine(i);
+                    Console.Write($"{i} ");
                 }
             }
-            return true;
+            Console.WriteLine();
         }
         else
         {
-            Console.WriteLine(" Lower bound should not be either equal nor larger than upper bound");
-            return false;
-        }
-    }
-    private static void Main(string[] args)
-    {
-        while (true)
-        {
-            if (PrintDivisibleByK())
-            {
-                Console.WriteLine("Press any key to exit...");
-                Console.ReadLine();
-                break;
-            }
+            Console.WriteLine("Error: n should be less than m");
         }
     }
 }

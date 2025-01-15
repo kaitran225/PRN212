@@ -1,35 +1,20 @@
 ﻿using System;
 internal class EXE01
 {
-
-
-
-
-    private static int SumRange(int a, int b)
+    static void Main(string[] args)
     {
-        int res = 0;
-        for (int i = a; i <= b; i++)
-        {
-            res += i;
-        } 
-        return res;
-    }
-    private static void Main(string[] args)
-    {
-        Console.Write("Enter lower bound: ");
+        Console.Write("Enter n: ");
         int n = int.Parse(Console.ReadLine());
-        Console.Write("Enter upper bound: ");
+        
+        Console.Write("Enter m: ");
         int m = int.Parse(Console.ReadLine());
-        if (n < m)
+
+        int sum = 0;
+        for (int i = n; i <= m; i++)
         {
-            int result = SumRange(n, m);
-            Console.WriteLine("Sum of all integers from " + n + " to " + m + " is: " + result);
+            sum += i;
         }
-        else
-        {
-            Console.WriteLine(" Lower bound should not be either equal nor larger than upper bound");
-        }
-        Console.WriteLine("Enter any key to exit...");
-        Console.ReadKey();
+
+        Console.WriteLine($"\nSum of all numbers from {n} to {m}: {sum}");
     }
 }

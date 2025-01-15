@@ -1,52 +1,37 @@
 ﻿using System;
-internal class EXE01
+internal class Program
 {
-    private static bool PrintDivisibleByK()
+    static void Main(string[] args)
     {
-        Console.Write("Enter lower bound: ");
-        int? n = int.Parse(Console.ReadLine().Trim());
-        Console.Write("Enter upper bound: ");
-        int? m = int.Parse(Console.ReadLine().Trim());
-        Console.Write("Enter divider x: ");
-        int? x = int.Parse(Console.ReadLine().Trim());
-        Console.Write("Enter divider y: ");
-        int? y = int.Parse(Console.ReadLine().Trim());
-        if( x == 0 ||  y == 0)
-        {
-            Console.WriteLine("Dividers should not equal to zero");
-            return false;
-        }
-        if (x == y) {
-            Console.WriteLine("Divider x and y should not be the same");
-            return false; }
+        Console.Write("Enter n: ");
+        int n = int.Parse(Console.ReadLine().Trim());
+        
+        Console.Write("Enter m: ");
+        int m = int.Parse(Console.ReadLine().Trim());
+        
+        Console.Write("Enter x: ");
+        int x = int.Parse(Console.ReadLine().Trim());
+        
+        Console.Write("Enter y: ");
+        int y = int.Parse(Console.ReadLine().Trim());
 
-        if (n < m )
+        if (x == 0 || y == 0)
         {
-            for (int i = (int)n; i <= m; i++)
-            {
-                if (i % x == 0 && i % y == 0) 
-                {
-                    Console.WriteLine(i);
-                }
-            }
-            return true;
+            Console.WriteLine("Error: x and y cannot be zero");
+            return;
         }
-        else
+
+        int count = 0;
+        Console.WriteLine($"\nNumbers divisible by both {x} and {y}:");
+        
+        for (int i = n; i <= m; i++)
         {
-            Console.WriteLine(" Lower bound should not be either equal nor larger than upper bound");
-            return false;
-        }
-    }
-    private static void Main(string[] args)
-    {
-        while (true)
-        {
-            if (PrintDivisibleByK())
+            if (i % x == 0 && i % y == 0)
             {
-                Console.WriteLine("Press any key to exit...");
-                Console.ReadLine();
-                break;
+                Console.Write($"{i} ");
+                count++;
             }
         }
+        Console.WriteLine($"\nCount: {count}");
     }
 }

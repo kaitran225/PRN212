@@ -1,42 +1,34 @@
 ﻿using System;
-internal class EXE01
+internal class Program
 {
-    private static bool PrintDivisibleByK()
+    static void Main(string[] args)
     {
-        Console.Write("Enter lower bound: ");
-        int? n = int.Parse(Console.ReadLine().Trim());
-        Console.Write("Enter upper bound: ");
-        int? m = int.Parse(Console.ReadLine().Trim());
-        Console.Write("Enter divider k: ");
-        int? k = int.Parse(Console.ReadLine().Trim());
+        Console.Write("Enter n: ");
+        int n = int.Parse(Console.ReadLine().Trim());
+        
+        Console.Write("Enter m: ");
+        int m = int.Parse(Console.ReadLine().Trim());
+        
+        Console.Write("Enter k: ");
+        int k = int.Parse(Console.ReadLine().Trim());
 
-        if (n < m || ( k != 0))
+        if (k == 0)
         {
-            for (int i = (int)n; i <= m; i++)
-            {
-                if(i % k == 0)
-                {
-                    Console.WriteLine(i);
-                }
-            }
-            return true;
+            Console.WriteLine("Error: k cannot be zero");
+            return;
         }
-        else
+
+        int sum = 0;
+        Console.WriteLine($"\nNumbers between {n} and {m} divisible by {k}:");
+        
+        for (int i = n; i <= m; i++)
         {
-            Console.WriteLine(" Lower bound should not be either equal nor larger than upper bound");
-            return false;
-        }
-    }
-    private static void Main(string[] args)
-    {
-        while (true)
-        {
-            if (PrintDivisibleByK())
+            if (i % k == 0)
             {
-                Console.WriteLine("Press any key to exit...");
-                Console.ReadLine();
-                break;
+                Console.Write($"{i} ");
+                sum += i;
             }
         }
+        Console.WriteLine($"\nSum of numbers divisible by {k}: {sum}");
     }
 }
