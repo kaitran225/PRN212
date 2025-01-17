@@ -1,4 +1,4 @@
-﻿using System;
+﻿        using System;
 internal class EXE02
 {
     private static bool PrintDivisibleByK()

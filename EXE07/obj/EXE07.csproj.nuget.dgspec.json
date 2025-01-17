@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PRN212\\EXE07\\EXE07.csproj": {}
+    "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE07\\EXE07.csproj": {}
   },
   "projects": {
-    "D:\\PRN212\\EXE07\\EXE07.csproj": {
+    "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE07\\EXE07.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN212\\EXE07\\EXE07.csproj",
+        "projectUniqueName": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE07\\EXE07.csproj",
         "projectName": "EXE07",
-        "projectPath": "D:\\PRN212\\EXE07\\EXE07.csproj",
-        "packagesPath": "C:\\Users\\Cybria\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN212\\EXE07\\obj\\",
+        "projectPath": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE07\\EXE07.csproj",
+        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nguye\\source\\repos\\PRN212\\EXE07\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cybria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
