@@ -1,0 +1,15 @@
+D:\PRN212\EXE19\bin\Debug\net9.0\EXE19.exe
+D:\PRN212\EXE19\bin\Debug\net9.0\EXE19.deps.json
+D:\PRN212\EXE19\bin\Debug\net9.0\EXE19.runtimeconfig.json
+D:\PRN212\EXE19\bin\Debug\net9.0\EXE19.dll
+D:\PRN212\EXE19\bin\Debug\net9.0\EXE19.pdb
+D:\PRN212\EXE19\obj\Debug\net9.0\EXE19.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN212\EXE19\obj\Debug\net9.0\EXE19.AssemblyInfoInputs.cache
+D:\PRN212\EXE19\obj\Debug\net9.0\EXE19.AssemblyInfo.cs
+D:\PRN212\EXE19\obj\Debug\net9.0\EXE19.csproj.CoreCompileInputs.cache
+D:\PRN212\EXE19\obj\Debug\net9.0\EXE19.sourcelink.json
+D:\PRN212\EXE19\obj\Debug\net9.0\EXE19.dll
+D:\PRN212\EXE19\obj\Debug\net9.0\refint\EXE19.dll
+D:\PRN212\EXE19\obj\Debug\net9.0\EXE19.pdb
+D:\PRN212\EXE19\obj\Debug\net9.0\EXE19.genruntimeconfig.cache
+D:\PRN212\EXE19\obj\Debug\net9.0\ref\EXE19.dll

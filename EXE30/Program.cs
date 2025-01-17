@@ -15,7 +15,7 @@
             return false;
         }
 
-        Console.WriteLine($"Fibonacci number at position {n}: {Fibonacci(n)}");\
+        Console.WriteLine($"Fibonacci number at position {n}: {Fibonacci(n)}");
         return true;
     }
 

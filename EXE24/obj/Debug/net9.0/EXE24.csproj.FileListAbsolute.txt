@@ -1,0 +1,15 @@
+D:\PRN212\EXE24\bin\Debug\net9.0\EXE24.exe
+D:\PRN212\EXE24\bin\Debug\net9.0\EXE24.deps.json
+D:\PRN212\EXE24\bin\Debug\net9.0\EXE24.runtimeconfig.json
+D:\PRN212\EXE24\bin\Debug\net9.0\EXE24.dll
+D:\PRN212\EXE24\bin\Debug\net9.0\EXE24.pdb
+D:\PRN212\EXE24\obj\Debug\net9.0\EXE24.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN212\EXE24\obj\Debug\net9.0\EXE24.AssemblyInfoInputs.cache
+D:\PRN212\EXE24\obj\Debug\net9.0\EXE24.AssemblyInfo.cs
+D:\PRN212\EXE24\obj\Debug\net9.0\EXE24.csproj.CoreCompileInputs.cache
+D:\PRN212\EXE24\obj\Debug\net9.0\EXE24.sourcelink.json
+D:\PRN212\EXE24\obj\Debug\net9.0\EXE24.dll
+D:\PRN212\EXE24\obj\Debug\net9.0\refint\EXE24.dll
+D:\PRN212\EXE24\obj\Debug\net9.0\EXE24.pdb
+D:\PRN212\EXE24\obj\Debug\net9.0\EXE24.genruntimeconfig.cache
+D:\PRN212\EXE24\obj\Debug\net9.0\ref\EXE24.dll

@@ -1,0 +1,15 @@
+D:\PRN212\EXE23\bin\Debug\net9.0\EXE23.exe
+D:\PRN212\EXE23\bin\Debug\net9.0\EXE23.deps.json
+D:\PRN212\EXE23\bin\Debug\net9.0\EXE23.runtimeconfig.json
+D:\PRN212\EXE23\bin\Debug\net9.0\EXE23.dll
+D:\PRN212\EXE23\bin\Debug\net9.0\EXE23.pdb
+D:\PRN212\EXE23\obj\Debug\net9.0\EXE23.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN212\EXE23\obj\Debug\net9.0\EXE23.AssemblyInfoInputs.cache
+D:\PRN212\EXE23\obj\Debug\net9.0\EXE23.AssemblyInfo.cs
+D:\PRN212\EXE23\obj\Debug\net9.0\EXE23.csproj.CoreCompileInputs.cache
+D:\PRN212\EXE23\obj\Debug\net9.0\EXE23.sourcelink.json
+D:\PRN212\EXE23\obj\Debug\net9.0\EXE23.dll
+D:\PRN212\EXE23\obj\Debug\net9.0\refint\EXE23.dll
+D:\PRN212\EXE23\obj\Debug\net9.0\EXE23.pdb
+D:\PRN212\EXE23\obj\Debug\net9.0\EXE23.genruntimeconfig.cache
+D:\PRN212\EXE23\obj\Debug\net9.0\ref\EXE23.dll

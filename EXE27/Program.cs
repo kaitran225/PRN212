@@ -2,8 +2,27 @@
 {
     private static bool read()
     {
-        string? filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "text.txt");
+        Console.Write("Enter the path to the text file: ");
+        Console.WriteLine("Sample file:  ..\\PRN212\\EXE27\\text.txt");
+        string? filePath = Console.ReadLine()?.Trim();
         
+
+        if (string.IsNullOrEmpty(filePath))
+        {
+            Console.WriteLine("File path cannot be empty. Please enter a valid path.");
+            return false;
+        }
+        if (!File.Exists(filePath))
+        {
+            Console.WriteLine("File does not exist. Please ensure the file exists.");
+            return false;
+        }
+        if (!filePath.EndsWith(".txt", StringComparison.OrdinalIgnoreCase))
+        {
+            Console.WriteLine("Please enter a valid .txt file path.");
+            return false;
+        }
+
         string[] lines = File.ReadAllLines(filePath);
         int wordCount = 0;
         int charCount = 0;

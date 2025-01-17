@@ -1,0 +1,15 @@
+D:\PRN212\EXE13\bin\Debug\net9.0\EXE13.exe
+D:\PRN212\EXE13\bin\Debug\net9.0\EXE13.deps.json
+D:\PRN212\EXE13\bin\Debug\net9.0\EXE13.runtimeconfig.json
+D:\PRN212\EXE13\bin\Debug\net9.0\EXE13.dll
+D:\PRN212\EXE13\bin\Debug\net9.0\EXE13.pdb
+D:\PRN212\EXE13\obj\Debug\net9.0\EXE13.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN212\EXE13\obj\Debug\net9.0\EXE13.AssemblyInfoInputs.cache
+D:\PRN212\EXE13\obj\Debug\net9.0\EXE13.AssemblyInfo.cs
+D:\PRN212\EXE13\obj\Debug\net9.0\EXE13.csproj.CoreCompileInputs.cache
+D:\PRN212\EXE13\obj\Debug\net9.0\EXE13.sourcelink.json
+D:\PRN212\EXE13\obj\Debug\net9.0\EXE13.dll
+D:\PRN212\EXE13\obj\Debug\net9.0\refint\EXE13.dll
+D:\PRN212\EXE13\obj\Debug\net9.0\EXE13.pdb
+D:\PRN212\EXE13\obj\Debug\net9.0\EXE13.genruntimeconfig.cache
+D:\PRN212\EXE13\obj\Debug\net9.0\ref\EXE13.dll
