@@ -1,25 +1,9 @@
-﻿using System;
-using System.IO;
-
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool read()
     {
-        Console.Write("Enter the file path: ");
-        string? filePath = Console.ReadLine()?.Trim();
-
-        if (string.IsNullOrWhiteSpace(filePath))
-        {
-            Console.WriteLine("Invalid file path. Please enter a non-empty path.");
-            return;
-        }
-
-        if (!File.Exists(filePath))
-        {
-            Console.WriteLine("File not found.");
-            return;
-        }
-
+        string? filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "text.txt");
+        
         string[] lines = File.ReadAllLines(filePath);
         int wordCount = 0;
         int charCount = 0;
@@ -42,5 +26,18 @@ internal class Program
 
         Console.WriteLine($"Lines: {lines.Length}, Words: {wordCount}, Characters: {charCount}");
         Console.WriteLine($"Longest word: {longestWord}");
+        return true;
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (read())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
+        }
     }
 }

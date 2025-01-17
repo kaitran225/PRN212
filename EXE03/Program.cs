@@ -1,37 +1,49 @@
-﻿using System;
-internal class Program
+﻿internal class EXE03
 {
-    static void Main(string[] args)
+    private static bool PrintOddNumber()
     {
-        Console.Write("Enter n: ");
+        Console.Write("Enter lower bound: ");
         if (!int.TryParse(Console.ReadLine()?.Trim(), out int n))
         {
-            Console.WriteLine("Invalid input for n. Please enter an integer.");
-            return;
+            Console.WriteLine("Invalid input for lower bound. Please enter an integer.");
+            return false;
         }
-        
-        Console.Write("Enter m: ");
+
+        Console.Write("Enter upper bound: ");
         if (!int.TryParse(Console.ReadLine()?.Trim(), out int m))
         {
-            Console.WriteLine("Invalid input for m. Please enter an integer.");
-            return;
+            Console.WriteLine("Invalid input for upper bound. Please enter an integer.");
+            return false;
         }
 
         if (n < m)
         {
-            Console.WriteLine($"\nEven numbers from {m} to {n} in reverse order:");
             for (int i = m; i >= n; i--)
             {
                 if (i % 2 == 0)
                 {
-                    Console.Write($"{i} ");
+                    Console.WriteLine(i);
                 }
             }
-            Console.WriteLine();
+            return true;
         }
         else
         {
-            Console.WriteLine("Error: n should be less than m");
+            Console.WriteLine("Lower bound should not be either equal to or larger than upper bound.");
+            return false;
+        }
+    }
+
+    private static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (PrintOddNumber())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
         }
     }
 }

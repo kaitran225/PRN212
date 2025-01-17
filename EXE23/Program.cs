@@ -1,26 +1,25 @@
-﻿using System;
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool primeBetween()
     {
         Console.Write("Enter lower bound (n): ");
         if (!int.TryParse(Console.ReadLine()?.Trim(), out int n))
         {
             Console.WriteLine("Invalid input. Please enter a valid integer.");
-            return;
+            return false;
         }
-        
+
         Console.Write("Enter upper bound (m): ");
         if (!int.TryParse(Console.ReadLine()?.Trim(), out int m))
         {
             Console.WriteLine("Invalid input. Please enter a valid integer.");
-            return;
+            return false;
         }
 
         if (n > m)
         {
             Console.WriteLine("Lower bound should not be greater than upper bound.");
-            return;
+            return false;
         }
 
         Console.WriteLine($"\nPrime numbers between {n} and {m}:");
@@ -31,9 +30,10 @@ internal class Program
                 Console.Write($"{i} ");
             }
         }
+        return true;
     }
 
-    static bool IsPrime(int number)
+    private static bool IsPrime(int number)
     {
         if (number < 2) return false;
         for (int i = 2; i <= Math.Sqrt(number); i++)
@@ -41,5 +41,17 @@ internal class Program
             if (number % i == 0) return false;
         }
         return true;
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (primeBetween())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
+        }
     }
 }

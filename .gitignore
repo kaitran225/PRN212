@@ -9,7 +9,7 @@
 *.sln.docstates
 
 # Visual Studio cache/options directory
-.vs/
+.vs
 
 # MSTest test Results
 [Tt]est[Rr]esult*/

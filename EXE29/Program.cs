@@ -1,9 +1,6 @@
-﻿using System;
-using System.IO;
-
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool read()
     {
         string? filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "products.csv");
 
@@ -14,7 +11,7 @@ internal class Program
         if (!double.TryParse(Console.ReadLine()?.Trim(), out double priceThreshold))
         {
             Console.WriteLine("Invalid input. Please enter a valid number.");
-            return;
+            return false;
         }
 
         string[] lines = File.ReadAllLines(filePath);
@@ -44,5 +41,19 @@ internal class Program
         }
 
         Console.WriteLine($"Total inventory value: {totalValue}");
+        return true;
+    }
+
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (read())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
+        }
     }
 }

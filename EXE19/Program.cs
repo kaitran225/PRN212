@@ -1,20 +1,19 @@
-﻿using System;
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool cal()
     {
         Console.Write("Enter first number: ");
         if (!double.TryParse(Console.ReadLine()?.Trim(), out double num1))
         {
             Console.WriteLine("Invalid input. Please enter a valid number.");
-            return;
+            return false;
         }
 
         Console.Write("Enter second number: ");
         if (!double.TryParse(Console.ReadLine()?.Trim(), out double num2))
         {
             Console.WriteLine("Invalid input. Please enter a valid number.");
-            return;
+            return false;
         }
 
         Console.WriteLine("Select operation: +, -, *, /");
@@ -33,5 +32,18 @@ internal class Program
             Console.WriteLine("Invalid operation or division by zero.");
         else
             Console.WriteLine($"Result: {result}");
+        return true;
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (cal())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
+        }
     }
 }

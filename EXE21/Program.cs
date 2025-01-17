@@ -1,7 +1,6 @@
-﻿using System;
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool cal()
     {
         Console.WriteLine("Select shape: square, rectangle, circle, triangle");
         string? shape = Console.ReadLine()?.Trim().ToLower();
@@ -13,7 +12,7 @@ internal class Program
                 if (!double.TryParse(Console.ReadLine()?.Trim(), out double side))
                 {
                     Console.WriteLine("Invalid input. Please enter a valid number.");
-                    return;
+                    return false;
                 }
                 Console.WriteLine($"Area: {side * side}, Perimeter: {4 * side}");
                 break;
@@ -23,13 +22,13 @@ internal class Program
                 if (!double.TryParse(Console.ReadLine()?.Trim(), out double length))
                 {
                     Console.WriteLine("Invalid input. Please enter a valid number.");
-                    return;
+                    return false;
                 }
                 Console.Write("Enter width: ");
                 if (!double.TryParse(Console.ReadLine()?.Trim(), out double width))
                 {
                     Console.WriteLine("Invalid input. Please enter a valid number.");
-                    return;
+                    return false;
                 }
                 Console.WriteLine($"Area: {length * width}, Perimeter: {2 * (length + width)}");
                 break;
@@ -39,7 +38,7 @@ internal class Program
                 if (!double.TryParse(Console.ReadLine()?.Trim(), out double radius))
                 {
                     Console.WriteLine("Invalid input. Please enter a valid number.");
-                    return;
+                    return false;
                 }
                 Console.WriteLine($"Area: {Math.PI * radius * radius}, Circumference: {2 * Math.PI * radius}");
                 break;
@@ -49,13 +48,13 @@ internal class Program
                 if (!double.TryParse(Console.ReadLine()?.Trim(), out double baseLength))
                 {
                     Console.WriteLine("Invalid input. Please enter a valid number.");
-                    return;
+                    return false;
                 }
                 Console.Write("Enter height: ");
                 if (!double.TryParse(Console.ReadLine()?.Trim(), out double height))
                 {
                     Console.WriteLine("Invalid input. Please enter a valid number.");
-                    return;
+                    return false;
                 }
                 Console.WriteLine($"Area: {0.5 * baseLength * height}");
                 break;
@@ -63,6 +62,19 @@ internal class Program
             default:
                 Console.WriteLine("Invalid shape.");
                 break;
+        }
+        return true;
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (cal())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
         }
     }
 }

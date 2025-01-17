@@ -1,5 +1,4 @@
-﻿using System;
-internal class EXE01
+﻿internal class EXE01
 {
     private static bool PrintRangedNums()
     {

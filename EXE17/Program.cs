@@ -1,21 +1,20 @@
-﻿using System;
-
-class Program
+﻿class Program
 {
-    static void Main(string[] args)
+    private static bool reverse()
     {
         Console.Write("Enter a number: ");
         if (!int.TryParse(Console.ReadLine()?.Trim(), out int number))
         {
             Console.WriteLine("Invalid input. Please enter a valid integer.");
-            return;
+            return false;
         }
 
         int reversedNumber = ReverseDigits(number);
         Console.WriteLine($"Reversed number: {reversedNumber}");
+        return true;
     }
 
-    static int ReverseDigits(int num)
+    private static int ReverseDigits(int num)
     {
         int reversed = 0;
         while (num > 0)
@@ -25,5 +24,17 @@ class Program
             num /= 10;
         }
         return reversed;
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (reverse())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
+        }
     }
 }

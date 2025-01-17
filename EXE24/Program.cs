@@ -1,7 +1,6 @@
-﻿using System;
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool cal()
     {
         Console.WriteLine("Enter numbers (enter -1 to stop):");
         double sum = 0;
@@ -33,6 +32,20 @@ internal class Program
         else
         {
             Console.WriteLine("No numbers were entered.");
+
+        }
+        return true;
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (cal())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
         }
     }
 }

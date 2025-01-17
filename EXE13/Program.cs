@@ -1,7 +1,6 @@
-﻿using System;
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool palindrome()
     {
         Console.Write("Enter a word: ");
         string? word = Console.ReadLine()?.Trim();
@@ -9,7 +8,7 @@ internal class Program
         if (string.IsNullOrWhiteSpace(word))
         {
             Console.WriteLine("Invalid input. Please enter a non-empty word.");
-            return;
+            return false;
         }
 
         string reversedWord = new string(word.Reverse().ToArray());
@@ -21,6 +20,19 @@ internal class Program
         else
         {
             Console.WriteLine($"{word} is not a palindrome.");
+        }
+        return true;
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (palindrome())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
         }
     }
 }

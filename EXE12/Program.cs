@@ -1,20 +1,19 @@
-﻿using System;
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool pass()
     {
         Console.Write("Enter number of students (k): ");
         if (!int.TryParse(Console.ReadLine()?.Trim(), out int k) || k <= 0)
         {
             Console.WriteLine("Invalid input for k. Please enter a positive integer.");
-            return;
+            return false;
         }
 
         Console.Write("Enter passing score (p): ");
         if (!double.TryParse(Console.ReadLine()?.Trim(), out double passingScore))
         {
             Console.WriteLine("Invalid input for passing score. Please enter a valid number.");
-            return;
+            return false;
         }
 
         string[] names = new string[k];
@@ -25,14 +24,19 @@ internal class Program
         {
             Console.Write($"\nEnter name for student {i + 1}: ");
             names[i] = Console.ReadLine()?.Trim() ?? string.Empty;
-            
+
             Console.Write($"Enter score for {names[i]}: ");
-            if (!double.TryParse(Console.ReadLine()?.Trim(), out scores[i]))
+            while (true)
             {
-                Console.WriteLine($"Invalid input for score. Please enter a valid number.");
-                return;
+                if (!double.TryParse(Console.ReadLine()?.Trim(), out scores[i]))
+                {
+                    Console.WriteLine($"Invalid input for score. Please enter a valid number.");
+                    continue;
+                }
+                sum += scores[i]
+                    ; break;
             }
-            sum += scores[i];
+
         }
 
         Console.WriteLine("\nStudents who passed:");
@@ -46,5 +50,18 @@ internal class Program
 
         double average = sum / k;
         Console.WriteLine($"\nClass average: {average:F2}");
+        return true;
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (pass())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
+        }
     }
 }

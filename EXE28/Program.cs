@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool dictionary()
     {
         Console.Write("Enter number of students (k): ");
         if (!int.TryParse(Console.ReadLine()?.Trim(), out int k) || k <= 0)
         {
             Console.WriteLine("Invalid input. Please enter a positive integer.");
-            return;
+            return false;
         }
 
         Dictionary<string, double> studentGrades = new Dictionary<string, double>();
@@ -18,7 +15,7 @@ internal class Program
         {
             Console.Write($"Enter name for student {i + 1}: ");
             string? name = Console.ReadLine()?.Trim();
-            
+
             if (string.IsNullOrWhiteSpace(name))
             {
                 Console.WriteLine("Invalid input. Please enter a non-empty name.");
@@ -41,7 +38,7 @@ internal class Program
         if (!double.TryParse(Console.ReadLine()?.Trim(), out double threshold))
         {
             Console.WriteLine("Invalid input. Please enter a valid number.");
-            return;
+            return false;
         }
 
         Console.WriteLine("\nStudents who scored above threshold:");
@@ -61,6 +58,20 @@ internal class Program
         else
         {
             Console.WriteLine("No students were entered.");
+
+        }
+        return true;
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (dictionary())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
         }
     }
 }

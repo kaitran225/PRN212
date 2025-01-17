@@ -1,13 +1,13 @@
-﻿using System;
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+
+    private static bool prime()
     {
         Console.Write("Enter a number: ");
         if (!int.TryParse(Console.ReadLine()?.Trim(), out int number))
         {
             Console.WriteLine("Invalid input. Please enter a valid integer.");
-            return;
+            return false;
         }
 
         bool isPrime = number > 1;
@@ -25,5 +25,18 @@ internal class Program
             Console.WriteLine($"{number} is a prime number.");
         else
             Console.WriteLine($"{number} is not a prime number.");
+        return true;
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (prime())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
+        }
     }
 }

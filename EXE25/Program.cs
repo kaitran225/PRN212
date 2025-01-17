@@ -1,7 +1,6 @@
-﻿using System;
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool simulate()
     {
         double balance = 0;
         while (true)
@@ -33,6 +32,11 @@ internal class Program
                         Console.WriteLine("Invalid input. Please enter a valid number.");
                         continue;
                     }
+                    if (withdraw < 0)
+                    {
+                        Console.WriteLine("Invalid input. Please enter a positive number.");
+                        continue;
+                    }
                     if (withdraw > balance)
                     {
                         Console.WriteLine("Insufficient funds.");
@@ -50,11 +54,23 @@ internal class Program
 
                 case 4:
                     Console.WriteLine("Exiting...");
-                    return;
+                    return true;
 
                 default:
                     Console.WriteLine("Invalid option. Please try again.");
                     break;
+            }
+        }
+    }
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (simulate())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
             }
         }
     }

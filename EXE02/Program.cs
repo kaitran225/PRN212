@@ -1,7 +1,6 @@
-﻿        using System;
-internal class EXE02
+﻿internal class EXE02
 {
-    private static bool PrintDivisibleByK()
+    private static bool PrintOddNumber()
     {
         Console.Write("Enter lower bound: ");
         if (!int.TryParse(Console.ReadLine()?.Trim(), out int n))
@@ -17,18 +16,11 @@ internal class EXE02
             return false;
         }
 
-        Console.Write("Enter divider k: ");
-        if (!int.TryParse(Console.ReadLine()?.Trim(), out int k) || k == 0)
-        {
-            Console.WriteLine("Invalid input for divider k. Please enter a non-zero integer.");
-            return false;
-        }
-
         if (n < m)
         {
             for (int i = n; i <= m; i++)
             {
-                if (i % k == 0)
+                if (i % 2 != 0)
                 {
                     Console.WriteLine(i);
                 }
@@ -46,7 +38,7 @@ internal class EXE02
     {
         while (true)
         {
-            if (PrintDivisibleByK())
+            if (PrintOddNumber())
             {
                 Console.WriteLine("Press any key to exit...");
                 Console.ReadLine();

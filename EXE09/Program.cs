@@ -1,13 +1,12 @@
-﻿using System;
-internal class Program
+﻿internal class Program
 {
-    static void Main(string[] args)
+    private static bool cal()
     {
         Console.Write("Enter the number of values (k): ");
         if (!int.TryParse(Console.ReadLine()?.Trim(), out int k) || k <= 0)
         {
             Console.WriteLine("Invalid input for k. Please enter a positive integer.");
-            return;
+            return false;
         }
 
         int positiveCount = 0, negativeCount = 0;
@@ -17,35 +16,54 @@ internal class Program
         for (int i = 1; i <= k; i++)
         {
             Console.Write($"Enter number {i}: ");
-            if (!double.TryParse(Console.ReadLine()?.Trim(), out double num))
+            while (true)
             {
-                Console.WriteLine($"Invalid input for number {i}. Please enter a valid number.");
-                return;
-            }
-            
-            if (num > 0)
-            {
-                positiveSum += num;
-                positiveCount++;
-            }
-            else if (num < 0)
-            {
-                negativeSum += num;
-                negativeCount++;
+                if (!double.TryParse(Console.ReadLine()?.Trim(), out double num))
+                {
+                    Console.WriteLine($"Invalid input for number {i}. Please enter a valid number.");
+                    continue;
+                }
+
+                if (num > 0)
+                {
+                    positiveSum += num;
+                    positiveCount++;
+                }
+                else if (num < 0)
+                {
+                    negativeSum += num;
+                    negativeCount++;
+                }
+
+                if (num % 2 == 0)
+                    evenCount++;
+                else
+                    oddCount++;
+                break;
             }
 
-            if (num % 2 == 0)
-                evenCount++;
-            else
-                oddCount++;
+
         }
 
         Console.WriteLine("\nResults:");
         if (positiveCount > 0)
-            Console.WriteLine($"Average of positive numbers: {positiveSum/positiveCount:F2}");
+            Console.WriteLine($"Average of positive numbers: {positiveSum / positiveCount:F2}");
         if (negativeCount > 0)
-            Console.WriteLine($"Average of negative numbers: {negativeSum/negativeCount:F2}");
+            Console.WriteLine($"Average of negative numbers: {negativeSum / negativeCount:F2}");
         Console.WriteLine($"Even numbers count: {evenCount}");
         Console.WriteLine($"Odd numbers count: {oddCount}");
+        return true;
+    }
+    public static void Main(string[] args)
+    {
+        while (true)
+        {
+            if (cal())
+            {
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                break;
+            }
+        }
     }
 }
